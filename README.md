@@ -6,7 +6,7 @@ this class, and the workflow using Git and GitHub.
 
 The first thing you will need to do is fork and clone this assignment
 from GitHub. Follow the instructions 
-[here](https://github.com/sbcc-cs140-fall2018/HowToStartEveryProject)
+[here](https://github.com/vcc-csv13-fall2018/HowToStartEveryProject)
 to get started. 
 
 Be sure that you fork the project first and use the URL from
@@ -39,7 +39,7 @@ contents that may already be in the `main.cc` file.
 
 ```cpp
 /**
- * CS 140 Object-Oriented Programming Using C++
+ * CS V13 Object-Oriented Programming
  * CRN: [CHANGE THIS INFORMATION]
  * Assignment: EX01-HelloWorld
  *
@@ -50,7 +50,7 @@ contents that may already be in the `main.cc` file.
  */
  
 #include <iostream>
-#include <cs140>
+#include <csv13>
 
 int main(UNUSED(int argc), UNUSED(char *argv[])) {
     std::cout << "Hello, World!" << std::endl;
@@ -67,7 +67,7 @@ In the **Run** view below the code you should see the output
 of running the program. It should look something like this:
 
 ```bash
-/Users/username/githubusername/cs140-ex01-helloworld/cmake-build-debug/bin/HelloWorld
+/Users/username/githubusername/ex01-helloworld/cmake-build-debug/bin/HelloWorld
 Hello, World!
 
 Process finished with exit code 0
@@ -123,5 +123,5 @@ and press **OK**. This step will run the tests again, check that everything is O
 and then submit them to the cloud to have the tests run for grading.
 
 If you do not understand these directions, or wish to do them on the command
-line rather than in CLion, then read these [directions](https://github.com/sbcc-cs140-fall2018/Course-Information/wiki/How-to-Turn-In-Every-Project).
+line rather than in CLion, then read these [directions](https://github.com/vcc-csv13-fall2018/Course-Information/wiki/How-to-Turn-In-Every-Project).
 >>>>>>> Initial checkin of project
