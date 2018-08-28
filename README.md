@@ -124,4 +124,3 @@ and then submit them to the cloud to have the tests run for grading.
 
 If you do not understand these directions, or wish to do them on the command
 line rather than in CLion, then read these [directions](https://github.com/vcc-csv13-fall2018/Course-Information/wiki/How-to-Turn-In-Every-Project).
->>>>>>> Initial checkin of project
