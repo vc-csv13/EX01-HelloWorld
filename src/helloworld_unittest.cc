@@ -27,14 +27,15 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// A unit tester for EX01-HelloWorld in CS140 at Santa Barbara City College.
+// A unit tester for EX01-HelloWorld in CSV13 at Ventura College.
 //
-// Author: ahknight@pipeline.sbcc.edu (Allan Knight)
+// Author: aknight@vcccd.edu (Allan Knight)
 
 
 // Includes for google test and the unit under test.
 
 #include <climits>
+#include <cstdint>
 #include <fstream>
 
 #include "gtest/gtest.h"
@@ -47,9 +48,9 @@ using namespace ::testing_internal;
 
 class HelloWorldTest : public ::testing::Test {
 protected:
-    static const uint MAX_TESTED_SCORE = 20;
-    static const uint MAX_OVERALL_SCORE = 25;
-    static uint _testScore;
+    static const uint64_t MAX_TESTED_SCORE = 20;
+    static const uint64_t MAX_OVERALL_SCORE = 25;
+    static uint64_t _testScore;
 
 protected:
     static void TearDownTestCase() {
@@ -72,15 +73,19 @@ protected:
     }
 };
 
-uint HelloWorldTest::_testScore = 0;
+uint64_t HelloWorldTest::_testScore = 0;
 
 // Tests returned string of greetWorld().
 TEST_F(HelloWorldTest, Positive) {
   // This test is named "Positive", and belongs to the "HelloWorld"
   // test case.
 
+#ifdef WIN32
+  std::system("HelloWorld > ./test.txt");
+#else 
   std::system("./HelloWorld > ./test.txt");
-  char buf[14];
+#endif
+  char buf[] = { '\0','\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0' ,'\0', '\0', '\0' };
   std::ifstream("./test.txt").rdbuf()->sgetn(buf, 14);
   ASSERT_STREQ("Hello, World!\n", buf);
 
