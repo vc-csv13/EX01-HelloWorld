@@ -5,6 +5,7 @@ project (EX01-HelloWorld)
 
 set(SOURCE_PREFIX "helloworld")
 set(EXEC_NAME "HelloWorld")
+set(CMAKE_CXX_STANDARD 11)
 
 if(EXISTS ${CMAKE_HOME_DIRECTORY}/csv13-lib/CMakeLists.txt)
     include(csv13-lib/CMakeLists.txt)
