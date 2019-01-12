@@ -104,10 +104,6 @@ criteria.
 Process finished with exit code 0
 ```
 
-Remember, red good, green bad. If your tests pass you should see green
-text and your code ran fine. You should also see your score for this
-assignment minus code styling points which I will add later.
-
 ### Submitting the code for this project
 
 At the bottom of CLion there should be a view tab labeled **Version Control**.
