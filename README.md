@@ -6,7 +6,7 @@ this class, and the workflow using Git and GitHub.
 
 The first thing you will need to do is fork and clone this assignment
 from GitHub. Follow the instructions 
-[here](https://github.com/vcc-csv13-fall2018/Course-Information/wiki)
+[here](https://github.com/vc-csv13-spring2019/Course-Information/wiki)
 to get started. 
 
 Be sure that you fork the project first and use the URL from
@@ -52,7 +52,7 @@ contents that may already be in the `main.cc` file.
 #include <iostream>
 #include <csv13>
 
-int main(UNUSED(int argc), UNUSED(char *argv[])) {
+int main(int argc, char *argv[]) {
     std::cout << "Hello, World!" << std::endl;
     return EXIT_SUCCESS;
 }
@@ -123,4 +123,4 @@ and press **OK**. This step will run the tests again, check that everything is O
 and then submit them to the cloud to have the tests run for grading.
 
 If you do not understand these directions, or wish to do them on the command
-line rather than in CLion, then read these [directions](https://github.com/vcc-csv13-fall2018/Course-Information/wiki/How-to-Turn-In-Every-Project).
+line rather than in CLion, then read these [directions](https://github.com/vc-csv13-spring2019/Course-Information/wiki/How-to-Turn-In-Every-Project).
