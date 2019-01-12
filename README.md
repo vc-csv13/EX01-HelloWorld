@@ -40,7 +40,6 @@ contents that may already be in the `main.cc` file.
 ```cpp
 /**
  * CS V13 Object-Oriented Programming
- * CRN: [CHANGE THIS INFORMATION]
  * Assignment: EX01-HelloWorld
  *
  * Statement of code ownership: I hereby state that I have written all of this
