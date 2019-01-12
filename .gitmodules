@@ -1,6 +1,0 @@
-[submodule "csv13-lib"]
-	path = csv13-lib
-	url = https://github.com/vcc-csv13-fall2018/csv13-lib.git
-[submodule "githooks"]
-	path = githooks
-	url = https://github.com/vcc-csv13-fall2018/githooks.git
