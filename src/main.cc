@@ -1,5 +1,5 @@
 /**
- * CS 140 Object-Oriented Programming Using C++
+ * CS V13 Object-Oriented Programming
  * Assignment: EX01-HelloWorld
  *
  * Statement of code ownership: I hereby state that I have written all of this
