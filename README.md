@@ -108,16 +108,12 @@ Process finished with exit code 0
 
 Before submitting your code the first time, you will need to add a webhook to this project to trigger the build in the cloud. This process is simple, and only required once per assignment. First, go to the **Settings** tab at the top of this page. It's right next to **Insights**. Then along the left side select **Webhooks**. On the Webhooks page click **Add Webhook** and copy http://209.129.49.16:8080/github-webhook/ into the **Payload URL** input box and then click **Add Webhook**. That's it. Every time you push code now, a new build will test your latest changes. The results are pasted to the #build channel in slack.
 
-At the bottom of CLion there should be a view tab labeled **Version Control**.
-Select this tab at the bottom of the screen. You should see a tab called **Local Changes**.
-Under **Unversion Files** you should have one file: `main.cc`.
-Select these files and right-click on them. In the drop-down menu
-select **Add to VCS**. Next, right-click on these files again, which should
-now be under **Default** and select **Commit**. Add the appropriate
-commit message and click **OK**. Finally, right click on the committed files,
-select `Git -> Repository -> Push...`. Follow the onscreen directions
-and press **OK**. This step will run the tests again, check that everything is OK
-and then submit them to the cloud to have the tests run for grading.
+First, right click on the project name, then select `Git -> Commit Directory...`. 
+Make sure only the files you want to push are selected, `main.cc`. Then uncheck `Perform code analysis` and `Check TODO`. It's OK to leave them checked, but committing will take longer. Leave `Run git hooks` unchecked as well. Put a message in `Commit Message` and then press the **Commit** button. If anything goes wrong check the _Version Control_ view
+in the lower left corner and select the _Console_ tab.
+ 
+Finally, right click on the project name, then select `Git -> Repository -> Push...`. Follow the onscreen directions
+and press **OK**. This step will then submit them to the cloud to have the tests run for grading.
 
 If you do not understand these directions, or wish to do them on the command
 line rather than in CLion, then read these [directions](https://github.com/vc-csv13-spring2019/Course-Information/wiki/How-to-Turn-In-Every-Project).
