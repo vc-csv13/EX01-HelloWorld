@@ -106,6 +106,8 @@ Process finished with exit code 0
 
 ### Submitting the code for this project
 
+Before submitting your code the first time, you will need to add a webhook to this project to trigger the build in the cloud. This process is simple, and only required once per assignment. First, go to the **Settings** tab at the top of this page. It's right next to **Insights**. Then along the left side select **Webhooks**. On the Webhooks page click **Add Webhook** and copy http://209.129.49.16:8080/github-webhook/ into the **Payload URL** input box and then click **Add Webhook**. That's it. Every time you push code now, a new build will test your latest changes. The results are pasted to the #build channel in slack.
+
 At the bottom of CLion there should be a view tab labeled **Version Control**.
 Select this tab at the bottom of the screen. You should see a tab called **Local Changes**.
 Under **Unversion Files** you should have one file: `main.cc`.
