@@ -1,3 +1,10 @@
+Dockerfile
+csv13-lib
+CMakeLists.txt
+README.md
+src/*_unittest.cc
+cmake-build-debug
+
 # Prerequisites
 *.d
 
