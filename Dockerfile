@@ -2,8 +2,11 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y openssh-server cmake clang gdb rsync
 RUN mkdir /var/run/sshd
-RUN echo 'root:password' | chpasswd
-RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN useradd -m -d /home/csv13-student csv13-student
+RUN echo 'csv13-student:vscilab01' | chpasswd
+
+COPY .docker/ssh /etc/ssh
+RUN chmod 0600 /etc/ssh/ssh*_key
 
 # SSH login fix. Otherwise user is kicked off after login
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
