@@ -1,8 +1,9 @@
-Dockerfile
 csv13-lib
 CMakeLists.txt
 README.md
 src/*_unittest.cc
+.idea
+!.idea/runConfigurations
 cmake-build-debug
 
 # Prerequisites
