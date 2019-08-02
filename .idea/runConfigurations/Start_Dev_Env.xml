@@ -1,0 +1,22 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Start Dev Env" type="docker-deploy" factoryName="docker-image" server-name="Docker">
+    <deployment type="docker-image">
+      <settings>
+        <option name="command" value="/usr/sbin/sshd -D" />
+        <option name="containerName" value="CSV13DevEnv" />
+        <option name="entrypoint" value="" />
+        <option name="imageTag" value="vcdrk/csv13-dev-environment:f19.1" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="22" />
+              <option name="hostPort" value="2222" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="--cap-add=SYS_PTRACE --security-opt seccomp=unconfined" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>
